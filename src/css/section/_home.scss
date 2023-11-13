@@ -1,0 +1,58 @@
+.home {
+  padding: 40px 0 104px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    max-width: 123.513px;
+    color: #070707;
+    font-family: Gilroy-Bold;
+    font-size: 47.339px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__about {
+    max-width: 155px;
+    color: #070707;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: end;
+  }
+  &__img {
+    background-image: url(../img/Home/Den.webp);
+    // object-position: top;
+    object-fit: cover;
+    margin-top: 50px;
+    max-width: 940px;
+    height: 387px;
+    // width: 100%;
+  }
+
+  @media (max-width: 525px) {
+    &__hero {
+      display: flex;
+      justify-content: space-between;
+    }
+     &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__about {
+      margin-top: 23px;
+    }
+    &__img {
+      // background: lightgray;
+      background-image: url(../img/Home/Den_mobile.webp);
+      max-width: 316px;
+      height: 478px;
+    }
+  }
+}

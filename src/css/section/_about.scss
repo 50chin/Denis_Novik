@@ -1,0 +1,38 @@
+.about {
+  padding: 120px 0 107px;
+  text-align: center;
+  background: #f6f6f6;
+
+  &__title {
+    color: #070707;
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 18px auto 0;
+    height: 218px;
+  }
+
+  &__text {
+    color: #070707;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media (max-width: 525px) {
+    &__content {
+
+      height: 261px;
+    }
+  }
+}
